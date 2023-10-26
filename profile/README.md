@@ -1,12 +1,6 @@
-## Hi there 👋
+# Trusted Execution
 
-<!--
+This is the home of the Trusted Execution lab here at the University of Hawaii's College of Engineering
 
-**Here are some ideas to get you started:**
+Our research is focused on techniques to improve the security of our data and applications in an era of increasing cyber threats.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
