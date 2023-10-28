@@ -1,6 +1,6 @@
 <img src="https://github.com/Trusted-Execution/.github/blob/main/profile/UHMLogo.png"
      alt="CoE Logo" align="left" height="80" />
-<img src="https://github.com/Trusted-Execution/.github/blob/main/profile/CollegeofEngineering.png"
+<img src="https://github.com/Trusted-Execution/.github/blob/main/profile/CollegeOfEngineering.png"
      alt="CoE Logo" align="right" width="80" />
 # Trusted Execution 
 
