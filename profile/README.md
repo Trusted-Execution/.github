@@ -48,3 +48,20 @@ You'll see references to these things in the documentation, but you can safely i
 - With Skylake-generation CPUs, SGX's Attestation Scheme you had to get a licnese from Intel for each enclave
 - Gemini Lake allowed "Flexile Launch Control" where you can sign your own enclaves
 - In Feb, 2021, the Linux Kernel mainlained some SGX support into the 5.11 kernel
+- 
+
+## Maintainers
+INTEL SGX
+Mail patches to: Jarkko Sakkinen <jarkko@kernel.org>
+Reviewer:        Dave Hansen <dave.hansen@linux.intel.com>
+Mailing list:    linux-sgx@vger.kernel.org
+Status:          Supported
+Patch tracking site:  https://patchwork.kernel.org/project/intel-sgx/list/
+Source tree:     git git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git x86/sgx
+Files:           Documentation/arch/x86/sgx.rst
+Files:           arch/x86/entry/vdso/vsgx.S
+Files:           arch/x86/include/asm/sgx.h
+Files:           arch/x86/include/uapi/asm/sgx.h
+Files:           arch/x86/kernel/cpu/sgx/*
+Files:           tools/testing/selftests/sgx/*
+Content Regex:   \bSGX_
