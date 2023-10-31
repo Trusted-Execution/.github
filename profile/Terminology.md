@@ -15,6 +15,8 @@ Language is important... ABIs, APIs and English are all variations of the same t
   -- Within a normal process, there is no mechanism to that an executable can use to make risk decisions about which Library to bind to it (libraries can have dependencies on other libraries)
   -- Within a normal process, there is no mechanism to ensure that an executable is genuine
 
+- **PLT**:  Procedure Linkage Table
+
 
 ## SGX Features this project will use
 This stuff you'll have to pay attention to:
