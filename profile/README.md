@@ -10,23 +10,8 @@ Our research is focused on techniques to improve the security of our data and ap
 ## Pages
 
 - [Terminology](Terminology.md)
-
-
+- [Notes on SGX in the Linux Kernel](notes_on_SGX_in_the_Linux_kernel.md)
 
 ## Notes
 - With Skylake-generation CPUs, SGX's Attestation Scheme you had to get a licnese from Intel for each enclave
 - Gemini Lake allowed "Flexile Launch Control" where you can sign your own enclaves
-- In Feb, 2021, the Linux Kernel mainlained some SGX support into the 5.11 kernel
-- 
-
-## Maintainers
-- Mail patches to: Jarkko Sakkinen <jarkko@kernel.org>
-- Reviewer:        Dave Hansen <dave.hansen@linux.intel.com>
-- Mailing list:    linux-sgx@vger.kernel.org
-- Status:          Supported
-- Files:           Documentation/arch/x86/sgx.rst
-- Files:           arch/x86/entry/vdso/vsgx.S
-- Files:           arch/x86/include/asm/sgx.h
-- Files:           arch/x86/include/uapi/asm/sgx.h
-- Files:           arch/x86/kernel/cpu/sgx/*
-- Files:           tools/testing/selftests/sgx/*
