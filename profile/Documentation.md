@@ -11,5 +11,4 @@ whatever you find helpful.
 
 - [SGX Instructions](https://github.com/Trusted-Execution/.github/blob/main/documentation/SGX%20Instructions.pdf):  Just the chapters relevant to SGX
 - [Intel SGX Developers Guide](https://github.com/Trusted-Execution/.github/blob/main/documentation/intel-sgx-developer-guide.pdf):  TBD
-- TBD:  Details on how to use `CPUID` to extract information about SGX on your system
- 
+- [SDM Model Specific Registers](https://github.com/Trusted-Execution/.github/blob/main/documentation/SDM_Model_Specific_Registers.pdf):  Details on how to use `CPUID` and MSRs (Model Specific Registers) to extract specific information about SGX on your system
