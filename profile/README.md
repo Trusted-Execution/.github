@@ -4,7 +4,7 @@
      alt="CoE Logo" align="right" width="80" />
 # Trusted Execution 
 
-Aloha and welcome to the home of the Trusted Execution Lab here at the University of Hawaii's College of Engineering.
+Aloha and welcome to the home of the Trusted Execution Lab here at the University of Hawaiʻi at Mānoa's College of Engineering.
 Our research is focused on techniques to improve the security of our data and applications in an era of increasing cyber threats.
 
 ## Pages
@@ -14,6 +14,7 @@ Our research is focused on techniques to improve the security of our data and ap
 - [Notes on SGX in the Linux Kernel](notes_on_SGX_in_the_Linux_kernel.md)
 - [SGX Hardware (and Deprication) Notes](hardware_notes.md)
 
-## Notes
-- With Skylake-generation CPUs, SGX's Attestation Scheme you had to get a licnese from Intel for each enclave
-- Gemini Lake allowed "Flexile Launch Control" where you can sign your own enclaves
+## Repositories
+
+- [SGX-Hardware](https://github.com/marknelsonengineer/SGX-hardware): We have forked Lars' old site and are carrying it forward. This includes an updated version of `sgx-test` that reports the SGX capabilities of your system.
+- [sgx_hello](https://github.com/Trusted-Execution/sgx_hello): A standalone, documented SGX Hello World implementation that does not require an SDK to compile & run
