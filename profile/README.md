@@ -10,6 +10,7 @@ Our research is focused on techniques to improve the security of our data and ap
 ## Pages
 
 - [Terminology](Terminology.md)
+- [Documentation](Documentation.md)
 - [Ask an Expert](ask_an_expert.md)
 - [Notes on SGX in the Linux Kernel](notes_on_SGX_in_the_Linux_kernel.md)
 - [SGX Hardware (and Deprication) Notes](hardware_notes.md)
