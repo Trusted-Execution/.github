@@ -11,3 +11,7 @@ whatever you find helpful.
 
 - [SGX Instructions](https://github.com/Trusted-Execution/.github/blob/main/documentation/SGX%20Instructions.pdf):  Just the chapters relevant to SGX
 - [SDM Model Specific Registers](https://github.com/Trusted-Execution/.github/blob/main/documentation/SDM_Model_Specific_Registers.pdf):  Details on how to use `CPUID` and MSRs (Model Specific Registers) to extract specific information about SGX on your system
+
+## YouTube Videos
+[State of Intel SGX in Linux - Jarkko Sakkinen](https://www.youtube.com/watch?v=VeD_eSPFxV0).  It’s a lot to take in, but I learned a few important things from it.
+ 
