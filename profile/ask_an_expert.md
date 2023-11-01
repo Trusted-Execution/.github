@@ -32,3 +32,12 @@ we'd like to ask.
 ## The Linux ABI
 
 ## ELF File Formats
+Here's a conndrum... Consider backward compatability and situations when a user does not have access to a system with SGX.  Do we build a Universal executable that can run on either platform or do we prevent the executable from running?
+  - Pros for Universal:
+    -- Usability
+  - Cons for Universal:
+    -- The app has to tell the user when it's in "Secure Mode" or not
+    -- We will be modifying the C programming language... so it really can't (easily) go backwards
+
+I'm thinking of designating a new executable suffix:  `.tx` For Trusted Executable.  I was going to call it `.sgx` but, it's trademarked by Intel and it's a specific implementation.  I'd like any enclave/trusted execution envornment to be able to use this, so let's make it generic.
+
