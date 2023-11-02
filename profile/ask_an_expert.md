@@ -28,6 +28,21 @@ we'd like to ask.
 ## Linker
 
 ## `glibc` & `ld`
+The program header lists the SEGMENT.  
+- SEGMENTS don't really have names and contain information necessary to load and execute a file.
+- SECTIONS have names like `.text`, `.data`, and hold important data for linking and relocation.
+- A SEGMENT contains 0 or more SECTIONS.
+
+I've spent a lot of time studying sections (`.text`) but not a lot of time worrying about segments.  
+`sgx_hello`, however, works at the segment layer (which makes sense as that is loader territory).
+
+So, the question is... How much SGX/TX information do we put in the SEGMENT table?  How do we identify 
+enclaves, which bits to measure, special SGX regions like the heap (a calloc'd /.bss page) and the 
+TCB.  
+
+Another question:  Does a modern loader look at sections or use section-level information when 
+it's loading or do modern loaders exclusivley use segments?  Should we even consider breaking 
+the convention?
 
 ## The Linux ABI
 
