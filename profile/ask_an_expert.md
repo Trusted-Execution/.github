@@ -44,6 +44,10 @@ Another question:  Does a modern loader look at sections or use section-level in
 it's loading or do modern loaders exclusivley use segments?  Should we even consider breaking 
 the convention?
 
+- What functions (if any) should be included in a mini-libc inside of each enclave? 
+-- Pro: these are relatively small and would prevent a lot of inter-enclave thrashing.
+-- Pro: can access data inside an enclave (so there may be a minimum we need just to do business)
+
 ## The Linux ABI
 
 ## ELF File Formats
