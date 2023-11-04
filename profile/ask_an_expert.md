@@ -47,7 +47,7 @@ the convention?
 - What functions (if any) should be included in a mini-libc inside of each enclave? 
 -- Pro: these are relatively small and would prevent a lot of inter-enclave thrashing.
 -- Pro: can access data inside an enclave (so there may be a minimum we need just to do business)
-
+-- Enclaves must have an internal library at a minimum for some of the enclave maintenance functions in SGX2
 ## The Linux ABI
 
 ## ELF File Formats
