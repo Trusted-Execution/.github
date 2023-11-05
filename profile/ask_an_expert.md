@@ -22,11 +22,18 @@ that's what we will do.  To that end, I'd like a central place where we can docu
 we'd like to ask.
 
 ## SGX
-General SGX Questions
-- Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
+### General SGX Questions
+- Question:  Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
   transferred on EENTER relative to the base of the enclave.) signed?
-  
+- Answer:  At least in `sgx_hello`, the TCS is definately signed.
+
 ### Intel
+- What is Intel's roadmap for SGX?
+- Has Intel abandoned their signing process?  What was their thinking around this?  How can trusted computing embrace
+  CPU-enfored (low-TCB) attributed code and get away from anonynmous code?
+- Does the TCS, specifically, TCS.OENTRY have to be signed?  Is there any way around that?  In other
+  words, is there any way to jump to an arbitrary address inside an enclave?
+  
 ### Linux Kernel SGX experts like Jarko
 
 ## Compiler
@@ -66,3 +73,10 @@ Here's a conndrum... Consider backward compatability and situations when a user 
 
 I'm thinking of designating a new executable suffix:  `.tx` For Trusted Executable.  I was going to call it `.sgx` but, it's trademarked by Intel and it's a specific implementation.  I'd like any enclave/trusted execution envornment to be able to use this, so let's make it generic.
 
+## Your Deity
+- In reimagining (trusted) computing, how can we abstractly adopt non-anonymized code?  We need a
+  positive name for this concept.  For this to be low TCB, we need it in the UEFI/BIOS simliar to how we set
+  virtual mode, sgx mode, etc. Setting the flags in real mode before switching modes and then booting the
+  OS.  What would this be?  A binary switch:  PRODUCTION / DEVELOPMENT (this seems too limiting
+  and not very abstract).  How would you abstract this convept?  Right now, I can only think of 2 modes:
+  MY_DADS_COMPUTER / IM_A_ROCKSTAR_DEVELOPER but I'm not being very creative.
