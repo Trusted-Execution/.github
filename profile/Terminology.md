@@ -40,3 +40,4 @@ You'll see references to these things in the documentation, but you can safely i
 - **SGX Quote** and **Quoting Enclave**:
 - **Data Center Attestation Primitives**: DCAP
 - **Intel Attestation Service**: IAS is an Internet service provided by Intel for “old” EPID-based remote attestation.
+- **Control-flow Enforcement Technology**:  
