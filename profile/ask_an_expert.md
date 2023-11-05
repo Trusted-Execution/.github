@@ -22,6 +22,10 @@ that's what we will do.  To that end, I'd like a central place where we can docu
 we'd like to ask.
 
 ## SGX
+General SGX Questions
+- Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
+  transferred on EENTER relative to the base of the enclave.) signed?
+  
 ### Intel
 ### Linux Kernel SGX experts like Jarko
 
