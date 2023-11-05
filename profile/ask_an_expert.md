@@ -22,6 +22,8 @@ that's what we will do.  To that end, I'd like a central place where we can docu
 we'd like to ask.
 
 ## SGX
+### Intel
+### Linux Kernel SGX experts like Jarko
 
 ## Compiler
 
