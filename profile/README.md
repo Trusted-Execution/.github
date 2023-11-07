@@ -14,6 +14,7 @@ Our research is focused on techniques to improve the security of our data and ap
 - [Ask an Expert](https://github.com/Trusted-Execution/.github/blob/main/profile/ask_an_expert.md)
 - [Notes on SGX in the Linux Kernel](https://github.com/Trusted-Execution/.github/blob/main/profile/notes_on_SGX_in_the_Linux_kernel.md)
 - [SGX Hardware (and Deprication) Notes](https://github.com/Trusted-Execution/.github/blob/main/profile/hardware_notes.md)
+- [Resources and Learning](https://github.com/Trusted-Execution/.github/blob/main/profile/Resources.md)
 
 ## Repositories
 
