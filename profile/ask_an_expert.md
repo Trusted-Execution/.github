@@ -35,7 +35,13 @@ we'd like to ask.
 - What's the deak with ME and TX?  Why did Intel drop support fo ME?  It's a powerful feature.  Is there
   a way to enable it?
 - Enclave sizes must be a power of 2, do you foresee that as an issue if SGX scales up?
-
+- Establishing a Commercial Agreement:
+  -- How hard is it to establish a Commercial Agreement?
+  -- Can academics do it?
+  -- Can an ordinary developer do it?  Would Intel be interested in scaling this up to "App Store" levels?
+  -- What are our options for storing/managing a signing key?  What are some examples of things that Intel has allowed?
+     What are some examples of things Intel has said No to?
+ 
 ### Linux Kernel SGX experts like Jarko
 - What are your thoughts on allowing non-privlidged users to create enclaves?  Right now, only privlidged
   users can create an enclave?
