@@ -23,21 +23,24 @@ we'd like to ask.
 
 ## SGX
 ### General SGX Questions
-- Question:  Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
-  transferred on EENTER relative to the base of the enclave.) signed?
-- Answer:  The TCS is definately signed.  Intel specifically designed SGX enclaves to have controlled
-  entry points to prevent ROP attacks.
 
 ### Intel
+- How can we talk to your SGX team?
 - What is Intel's roadmap for SGX?
 - Has Intel abandoned their signing process?  What was their thinking around this?  How can trusted computing embrace
   CPU-enfored (low-TCB) attributed code and get away from anonynmous code?
 - Does the TCS, specifically, TCS.OENTRY have to be signed?  Is there any way around that?  In other
   words, is there any way to jump to an arbitrary address inside an enclave?
+- How can we share data between enclaves by choice?  Can we create an amalgam enclave?
+- What's the deak with ME and TX?  Why did Intel drop support fo ME?  It's a powerful feature.  Is there
+  a way to enable it?
+- Enclave sizes must be a power of 2, do you foresee that as an issue if SGX scales up?
   
 ### Linux Kernel SGX experts like Jarko
 - What are your thoughts on allowing non-privlidged users to create enclaves?  Right now, only privlidged
   users can create an enclave?
+
+### Answers to SGX questions
 
 ## Compiler
 
