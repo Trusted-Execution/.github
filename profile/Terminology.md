@@ -4,9 +4,9 @@
      alt="CoE Logo" align="right" width="80" />
 # Terminology
 
-Language is important... ABIs, APIs and English are all variations of the same theme:  An agreement amongst producers and consumers on a set of conventions for communicating information.  To that end, there's some terminilogy that we should identify up-front and try to use it consistently throughout this project:
+Language is important... ABIs, APIs and English are all variations of the same theme:  An agreement amongst producers and consumers on a set of conventions for communicating information.  To that end, there's some terminilogy we should identify up-front and try to use it consistently throughout this project:
 
-- **Executable**:  A file that contains executable code.  Generally executables can be either a Library or a Main
+- **Executable**:  A file that contains executable code.  Generally executables will be either a Library or a Main
 - **Library**:  An executable that's intended to be shared by several Main files
 - **Main**:  An executable with an entry point
 - **Static Main**:  An executable that's been statically compiled and needs no Libraries
@@ -16,6 +16,8 @@ Language is important... ABIs, APIs and English are all variations of the same t
   -- Within a normal process, there is no mechanism to ensure that an executable is genuine
 
 - **PLT**:  Procedure Linkage Table
+- **TX**: Trusted Execution (It's not Transmit, we're not programming UARTs).  SGX is an implementation
+  of an abstract concept called **TEE** Trusted Execution Environments.  
 
 
 ## SGX Features this project will use
