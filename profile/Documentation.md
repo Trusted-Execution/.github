@@ -14,9 +14,9 @@ whatever you find helpful.
 - [Linux ABI](https://github.com/Trusted-Execution/.github/blob/main/documentation/Linux_ABI.pdf): The Linux Application Binary Interface
 
 - ELF File Format:
-  -- [ELF101 a Linux executable walkthrough](https://github.com/Trusted-Execution/.github/blob/main/documentation/elf101.pdf):  An ELF format poster
-  -- [elf(5) man page](https://github.com/Trusted-Execution/.github/blob/main/documentation/elf.pdf):  An 18 page summary of the ELF file format
-  -- [ELF Standard](https://github.com/Trusted-Execution/.github/blob/main/documentation/ELF_Format.pdf):  The formal ELF specification
+  - [ELF101 a Linux executable walkthrough](https://github.com/Trusted-Execution/.github/blob/main/documentation/elf101.pdf):  An ELF format poster
+  - [elf(5) man page](https://github.com/Trusted-Execution/.github/blob/main/documentation/elf.pdf):  An 18 page summary of the ELF file format
+  - [ELF Standard](https://github.com/Trusted-Execution/.github/blob/main/documentation/ELF_Format.pdf):  The formal ELF specification
   
 
 ## YouTube Videos
