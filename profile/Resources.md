@@ -18,3 +18,7 @@ ELF Linux Executable PLT and GOT Tables:  https://www.linkedin.com/pulse/elf-lin
 
 ## Want to learn about SGX, here's my recommended cirricula:
 A good 90-minute video, hosted by one of SGX's designers, describing the technology at a low level:  https://www.youtube.com/watch?v=mPT_vJrlHlg
+
+
+## Other
+I've always liked Agner Fog's resources, so I'm linking to it:  https://www.agner.org/optimize/
