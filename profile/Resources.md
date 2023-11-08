@@ -3,6 +3,8 @@
 ## Linux Kernel Resources
 A good place to view and search Linux Kernel source code:  https://elixir.bootlin.com/linux/latest/source
 
+https://refspecs.linuxfoundation.org
+
 ## Linker Resources
 Linkers are really a black box for most programmers.  I bet there's less than 100 people in the world
 who have a low-level understaning of linking, yet every-single-program we run has likely been linked.
