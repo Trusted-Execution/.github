@@ -11,6 +11,9 @@ It's amazing that such a linchpin technology is so little understood.
 Ian Lance Taylor has a series of articles on linkers:  https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got
 
 
+## Linux 64-bit ABI Resources
+Here's a good guide:  https://www.agner.org/optimize/calling_conventions.pdf
+
 ## Linux ELF File Format
 
 ELF Linux Executable PLT and GOT Tables:  https://www.linkedin.com/pulse/elf-linux-executable-plt-got-tables-mohammad-alhyari/
