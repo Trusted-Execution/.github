@@ -42,4 +42,5 @@ You'll see references to these things in the documentation, but you can safely i
 - **SGX Quote** and **Quoting Enclave**:
 - **Data Center Attestation Primitives**: DCAP
 - **Intel Attestation Service**: IAS is an Internet service provided by Intel for “old” EPID-based remote attestation.
-- **Control-flow Enforcement Technology**:  
+- **Control-flow Enforcement Technology**:
+- **32-bits**: We live in a 64-bit bit world for the forseeable future.  All of this code must be recompiled, so binary-level backward compatability is not at issue.  If anyone feels strongly that they need 32-bit TX programs, we'd look at the level-of-effort and consider it.
