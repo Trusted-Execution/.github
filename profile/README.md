@@ -19,4 +19,4 @@ Our research is focused on techniques to improve the security of our data and ap
 ## Repositories
 
 - [SGX-Hardware](https://github.com/marknelsonengineer/SGX-hardware): We have forked Lars' old site and are carrying it forward. This includes an updated version of `sgx-test` that reports the SGX capabilities of your system.
-- [sgx_hello](https://github.com/Trusted-Execution/sgx_hello): A standalone, documented SGX Hello World implementation that does not require an SDK to compile & run
+- [sgx_hello](https://github.com/Trusted-Execution/sgx_hello): A framework and our prototype for Trusted Execution.  It's fully documented [here](https://www2.hawaii.edu/~marknels/tx/index.html).
