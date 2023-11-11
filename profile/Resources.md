@@ -29,7 +29,8 @@ It's amazing that such a linchpin technology is so little understood.
 ## C Language Standard
 - The C++ and C programming languages are described here (C is at the bottom): https://en.cppreference.com.  Remember:  These are separate languages!
 - How `main()` works:  https://en.cppreference.com/w/c/language/main_function
-
+- A bit more about CRT:  https://en.wikipedia.org/wiki/Crt0
+  
 ## Want to learn about SGX, here's my recommended cirricula:
 A good 90-minute video, hosted by one of SGX's designers, describing the technology at a low level:  https://www.youtube.com/watch?v=mPT_vJrlHlg
 
