@@ -11,7 +11,7 @@ whatever you find helpful.
 
 - [SGX Instructions](https://github.com/Trusted-Execution/.github/blob/main/documentation/SGX%20Instructions.pdf):  Just the chapters relevant to SGX
 - [SDM Model Specific Registers](https://github.com/Trusted-Execution/.github/blob/main/documentation/SDM_Model_Specific_Registers.pdf):  Details on how to use `CPUID` and MSRs (Model Specific Registers) to extract specific information about SGX on your system
-- [Linux ABI](https://github.com/Trusted-Execution/.github/blob/main/documentation/Linux_ABI.pdf): The Linux Application Binary Interface
+- [Linux ABI](https://github.com/Trusted-Execution/.github/blob/main/documentation/Linux_ABI.pdf): The Linux Application Binary Interface (you can get the latest version from here:  https://gitlab.com/x86-psABIs/x86-64-ABI)
 
 - ELF File Format:
   - [ELF101 a Linux executable walkthrough](https://github.com/Trusted-Execution/.github/blob/main/documentation/elf101.pdf):  An ELF format poster
