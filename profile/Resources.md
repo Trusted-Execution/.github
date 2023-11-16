@@ -1,5 +1,38 @@
 # Resources and Learning SGX
 
+## Git Resources
+Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. 
+Once a pull request is opened, you can discuss and review the potential changes with collaborators 
+and add follow-up commits before your changes are merged into the base branch.
+
+Use this [template](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/) 
+to make updates to our [SGX-hardware](https://github.com/Trusted-Execution/SGX-hardware) repo:
+
+Initial setup:
+
+    $ git clone https://github.com/Trusted-Execution/SGX-hardware
+    $ cd SGX-hardware
+
+Setup for more changes:
+
+    $ git pull origin [Branch Name]
+
+Changing the repo with the intent to do a Pull Request:
+
+    $ git checkout -b [Branch Name]
+  
+During development & testing:
+  
+    $ git add .
+    $ git commit -m "Your detailed commit message"
+
+When you're ready to push to GitHub:
+
+    $ git push origin [Branch Name]
+
+Navigate to our SGX-hardware repo and initiate a pull request.
+
+
 ## Linux Kernel Resources
 - A good place to view and search Linux Kernel source code:  https://elixir.bootlin.com/linux/latest/source
 
