@@ -51,9 +51,14 @@ It's amazing that such a linchpin technology is so little understood.
 - Here's a good guide:  https://www.agner.org/optimize/calling_conventions.pdf
 - And the universal reference:  https://en.wikipedia.org/wiki/X86_calling_conventions
 
+
+## Making calls into shared libraries
 - PLT & GOT tutorial:  https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html
+- [Understanding _dl_runtime_resolve()](https://ypl.coffee/dl-resolve/)
+- [The Procedure Lookup Table](https://bottomupcs.sourceforge.net/csbu/x3882.htm)
 - Another article:  https://www.linkedin.com/pulse/elf-linux-executable-plt-got-tables-mohammad-alhyari/
 
+  
 ## Linux ELF File Format
 
 - ELF Linux Executable PLT and GOT Tables:  https://www.linkedin.com/pulse/elf-linux-executable-plt-got-tables-mohammad-alhyari/
@@ -63,6 +68,7 @@ It's amazing that such a linchpin technology is so little understood.
 - The C++ and C programming languages are described here (C is at the bottom): https://en.cppreference.com.  Remember:  These are separate languages!
 - How `main()` works:  https://en.cppreference.com/w/c/language/main_function
 - A bit more about CRT:  https://en.wikipedia.org/wiki/Crt0
+
   
 ## Want to learn about SGX, here's my recommended cirricula:
 A good 90-minute video, hosted by one of SGX's designers, describing the technology at a low level:  https://www.youtube.com/watch?v=mPT_vJrlHlg
