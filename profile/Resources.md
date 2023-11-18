@@ -60,9 +60,9 @@ It's amazing that such a linchpin technology is so little understood.
 
   
 ## Linux ELF File Format
-
 - ELF Linux Executable PLT and GOT Tables:  https://www.linkedin.com/pulse/elf-linux-executable-plt-got-tables-mohammad-alhyari/
-
+- [man readelf](https://man.archlinux.org/man/readelf.1.en)
+- [man objdump](https://man.archlinux.org/man/objdump.1)
 
 ## C Language Standard
 - The C++ and C programming languages are described here (C is at the bottom): https://en.cppreference.com.  Remember:  These are separate languages!
