@@ -45,6 +45,11 @@ we'd like to ask.
 ### Linux Kernel SGX experts like Jarko
 - What are your thoughts on allowing non-privlidged users to create enclaves?  Right now, only privlidged
   users can create an enclave?
+- What are the plans for the vDSO?  The documentation says the vDSO function (vdso_sgx_enter_enclave) intercepts
+  exceptions that would otherwise generate a signal and return the fault information directly to its caller. This
+  avoids the need to juggle signal handlers. I'm not seeing the code that does that.  Am I missing something?  Is
+  this planned behavior?
+- Are there plans for any more vDSO-based SGX functions?
 
 ### Answers to SGX questions
   - Question:  Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
