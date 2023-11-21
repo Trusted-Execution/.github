@@ -9,6 +9,7 @@ Our research is focused on techniques to improve the security of our data and ap
 
 ## Pages
 
+- [Project Description](https://github.com/Trusted-Execution/.github/blob/main/profile/Description.md)
 - [Terminology](https://github.com/Trusted-Execution/.github/blob/main/profile/Terminology.md)
 - [Documentation](https://github.com/Trusted-Execution/.github/blob/main/profile/Documentation.md)
 - [Ask an Expert](https://github.com/Trusted-Execution/.github/blob/main/profile/ask_an_expert.md)
