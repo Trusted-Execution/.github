@@ -50,6 +50,10 @@ we'd like to ask.
   avoids the need to juggle signal handlers. I'm not seeing the code that does that.  Am I missing something?  Is
   this planned behavior?
 - Are there plans for any more vDSO-based SGX functions?
+- I noticed that in line 567 of v6.6.2 of /arch/x86/kernel/cpu/sgx/ioctl.c, the code throws away the return value
+  EINIT which would have some valuable debugging data.  The only way to see it is to enable debugging in
+  the kernel, and even then, the program wouldn't be able to use it.  Is there a way we can get that error
+  number to the calling program?
 
 ### Answers to SGX questions
   - Question:  Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
