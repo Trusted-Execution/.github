@@ -16,10 +16,10 @@ For the last several years, there have been two types of programs that utilize S
 I'm proposing a new programming paradigm… one where a program and each of its libraries run in their own enclaves. This is difficult to achieve because we have to modify several disparate pieces of well established software.
 
 1.  Modify the interlibrary parameter passing mechanism of the Application Binary Interface (ABI), which defines how various functions in a library are stored and called in a program.  We are proposing/studying two methods: a fast ABI and a secure ABI. We are interested in studying the "cost" of security in terms of application performance.
-2.  Modify the program loader to identify the libraries the program needs and put the program and each library in its own private enclave.
-3.  Modify the compiler to implement the new ABI when making inter-library calls (including system calls).
+2.  Modify the program loader, which prepares a program for usage, to identify the libraries the program needs and put the program and each library in its own private enclave.
+3.  Modify the compiler, which translates a program into something your computer can understand, to implement the new ABI when making inter-library calls (including system calls).
 4.  Modify the compiler to store a new class of private data inside the enclave (protecting this data from the operating system and other libraries).
-5.  Modify the compiler to accept new "pragmas" to configure the enclave so all of the source code is contained in one file (today's SGX SDKs require several source and configuration files).
+5.  Modify the compiler to accept new "pragmas" (notes/instructions to the complier) to configure the enclave so all of the source code is contained in one file (today's SGX SDKs require several source and configuration files).
 6.  Modify the program and library startup code (CRTs) to implement several new features:
     - Dispatch function calls from a common entry point to code inside the enclave. 
     - Find other enclaves and securely create shared keys with them. 
