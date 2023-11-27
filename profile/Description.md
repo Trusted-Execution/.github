@@ -21,17 +21,17 @@ I'm proposing a new programming paradigm… one where a program and each of its 
 4.  Modify the compiler to store a new class of private data inside the enclave (protecting this data from the operating system and other libraries).
 5.  Modify the compiler to accept new "pragmas" to configure the enclave so all of the source code is contained in one file (today's SGX SDKs require several source and configuration files).
 6.  Modify the program and library startup code (CRTs) to implement several new features:
-    - Dispatch function calls from a common entry point to code inside the enclave 
-    - Find other enclaves and securely create shared keys with them 
-    - Provide a minimal standard library inside the enclave 
-    - Deal with interrupts and exceptions
+    - Dispatch function calls from a common entry point to code inside the enclave. 
+    - Find other enclaves and securely create shared keys with them. 
+    - Provide a minimal standard library inside the enclave. 
+    - Deal with interrupts and exceptions.
 
 All of our claims can be satisfied with existing SGX capabilities, but programs will have a few limitations:
-1.  Program execution will be slower due to the overhead of switching enclaves
-2.  Programs would (at a minimum) need to be recompiled
-3.  Programs would need some modification to privatize data
-4.  There are known SGX exploits and data leaks, mostly arising from architectural side channels (like Spectre and Meltdown)
-5.  We are unsure if we can share physical pages between processes (as is common today)
+1.  Program execution will be slower due to the overhead of switching enclaves.
+2.  Programs would (at a minimum) need to be recompiled.
+3.  Programs would need some modification to privatize data.
+4.  There are known SGX exploits and data leaks, mostly arising from architectural side channels (like Spectre and Meltdown).
+5.  We are unsure if we can share physical pages between processes (as is common today).
 
 We believe that if this technology becomes pervasive, then Intel would be motivated to improve the speed, security, and feature set of SGX.  If Intel were to implement a mechanism for securely sharing data between enclaves, then we would be able to satisfy the following security claims for a wide variety of programs, including multi-threaded programs:
 1.  Data stored on the stack, heap, and global areas could be protected with a recompilation, rather than modifying the program.
