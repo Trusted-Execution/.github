@@ -73,6 +73,8 @@ It's amazing that such a linchpin technology is so little understood.
 ## Want to learn about SGX, here's my recommended cirricula:
 A good 90-minute video, hosted by one of SGX's designers, describing the technology at a low level:  https://www.youtube.com/watch?v=mPT_vJrlHlg
 
+This is a good, comprehensive overview of SGX:
+https://blog.quarkslab.com/overview-of-intel-sgx-part-1-sgx-internals.html
 
 ## Other
 - I've always liked Agner Fog's resources, so I'm linking to it:  https://www.agner.org/optimize/
