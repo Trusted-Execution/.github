@@ -60,6 +60,8 @@ You can then merge the changes into your current branch:
 
 You may have merge conflicts, which can be fixed within the relevant file(s). 
 
+More details and other helpful Git tutorials can be found [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github#update-local-repository).
+
 ## Linux Kernel Resources
 - A good place to view and search Linux Kernel source code:  https://elixir.bootlin.com/linux/latest/source
 
