@@ -1,6 +1,8 @@
 # Resources and Learning SGX
 
 ## Git Resources
+
+### Pull Requests
 Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. 
 Once a pull request is opened, you can discuss and review the potential changes with collaborators 
 and add follow-up commits before your changes are merged into the base branch.
@@ -32,6 +34,31 @@ When you're ready to push to GitHub:
 
 Navigate to our SGX-hardware repo and initiate a pull request.
 
+### Pulling changes from upstream
+Sometimes we need to update a branch in a forked repo with the latest changes from the original repo.
+This can be helpful when trying to resolve merge conflicts.
+
+Make sure you're in the branch that you want to pull the code into:
+
+    $ git checkout [Branch Name]
+
+List all the currently tracked repos:
+
+    $ git remote -v
+
+If you don't see the original repo listed as "upstream", run:
+
+    $ git remote add upstream [Link to original repo]
+
+Then pull the changes from upstream:
+
+    $ git fetch upstream
+
+You can then merge the changes into your current branch:
+
+    $ git merge upstream/main
+
+You may have merge conflicts, which can be fixed within the relevant file(s). 
 
 ## Linux Kernel Resources
 - A good place to view and search Linux Kernel source code:  https://elixir.bootlin.com/linux/latest/source
