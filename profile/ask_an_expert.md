@@ -41,6 +41,8 @@ we'd like to ask.
   -- Can an ordinary developer do it?  Would Intel be interested in scaling this up to "App Store" levels?
   -- What are our options for storing/managing a signing key?  What are some examples of things that Intel has allowed?
      What are some examples of things Intel has said No to?
+- One feature request we'd love to have... that would eliminate a lot of CRT code is the ability
+  for enclaves to directly call other enclaves.  
  
 ### Linux Kernel SGX experts like Jarko
 - What are your thoughts on allowing non-privlidged users to create enclaves?  Right now, only privlidged
