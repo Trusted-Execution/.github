@@ -12,6 +12,12 @@ whatever you find helpful.
 - [SGX Instructions](https://github.com/Trusted-Execution/.github/blob/main/documentation/SGX%20Instructions.pdf):  Just the chapters relevant to SGX
 - [SDM Model Specific Registers](https://github.com/Trusted-Execution/.github/blob/main/documentation/SDM_Model_Specific_Registers.pdf):  Details on how to use `CPUID` and MSRs (Model Specific Registers) to extract specific information about SGX on your system
 - [Linux ABI](https://github.com/Trusted-Execution/.github/blob/main/documentation/Linux_ABI.pdf): The Linux Application Binary Interface (you can get the latest version from here:  https://gitlab.com/x86-psABIs/x86-64-ABI)
+- An excellent Overview of Intel SGX
+  - SGX Internals:  https://blog.quarkslab.com/overview-of-intel-sgx-part-1-sgx-internals.html
+  - SGX Externals:  https://blog.quarkslab.com/overview-of-intel-sgx-part-2-sgx-externals.html
+
+- Linkers, Loaders and Shared Libraries in Windows, Linux, and C++ - Ofek Shilon - CppCon 2023
+  - 1-hour video:  https://www.youtube.com/watch?v=_enXuIxuNV4 
 
 - ELF File Format:
   - [ELF101 a Linux executable walkthrough](https://github.com/Trusted-Execution/.github/blob/main/documentation/elf101.pdf):  An ELF format poster
