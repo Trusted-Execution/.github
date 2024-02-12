@@ -42,7 +42,10 @@ we'd like to ask.
   -- What are our options for storing/managing a signing key?  What are some examples of things that Intel has allowed?
      What are some examples of things Intel has said No to?
 - One feature request we'd love to have... that would eliminate a lot of CRT code is the ability
-  for enclaves to directly call other enclaves.  
+  for enclaves to directly call other enclaves.
+- How can we tell how large an SSA frame will be?  We know how big the XSAVE area will be.  We know GPRSGX is a fixed size.
+- Possible bug:  Let's say we set aside 4K for the SSA.  CPUID tells us that it wants 1088 bytes for XSAVE.  Now, set NSSA to a big number (like 14)... the enclave starts and thinks everything is fine even if there's nowhere near that much room
+in the SSA.
  
 ### Linux Kernel SGX experts like Jarko
 - What are your thoughts on allowing non-privlidged users to create enclaves?  Right now, only privlidged
