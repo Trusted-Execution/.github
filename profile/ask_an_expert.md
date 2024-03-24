@@ -27,12 +27,11 @@ we'd like to ask.
 ### Intel
 - How can we talk to your SGX team?
 - What is Intel's roadmap for SGX?
-- Has Intel abandoned their signing process?  What was their thinking around this?  How can trusted computing embrace
-  CPU-enfored (low-TCB) attributed code and get away from anonynmous code?
-- Does the TCS, specifically, TCS.OENTRY have to be signed?  Is there any way around that?  In other
-  words, is there any way to jump to an arbitrary address inside an enclave?
+- Has Intel abandoned their signing process?
+  - What was their thinking around this?
+  - How can trusted computing embrace CPU-enfored (low-TCB) attributed code and get away from anonynmous code?
 - How can we share data between enclaves by choice?  Can we create an amalgam enclave?
-- What's the deak with ME and TX?  Why did Intel drop support fo ME?  It's a powerful feature.  Is there
+- What's the deal with ME and TX?  Why did Intel drop support fo ME?  It's a powerful feature.  Is there
   a way to enable it?
 - Enclave sizes must be a power of 2, do you foresee that as an issue if SGX scales up?
 - Establishing a Commercial Agreement:
@@ -40,13 +39,39 @@ we'd like to ask.
   -- Can academics do it?
   -- Can an ordinary developer do it?  Would Intel be interested in scaling this up to "App Store" levels?
   -- What are our options for storing/managing a signing key?  What are some examples of things that Intel has allowed?
-     What are some examples of things Intel has said No to?
-- One feature request we'd love to have... that would eliminate a lot of CRT code is the ability
-  for enclaves to directly call other enclaves.
-- How can we tell how large an SSA frame will be?  We know how big the XSAVE area will be.  We know GPRSGX is a fixed size.
-- Possible bug:  Let's say we set aside 4K for the SSA.  CPUID tells us that it wants 1088 bytes for XSAVE.  Now, set NSSA to a big number (like 14)... the enclave starts and thinks everything is fine even if there's nowhere near that much room
-in the SSA.
- 
+  -- What are some examples of things Intel has said "No" to?
+
+#### Intel Feature Requests
+  - The ability for one enclave to directly call another enclave.  This would eliminate a lot of CRT code.
+    - Just EENTER... that's all.  Not EINIT, EADD, et. al..
+  - I think CET should be mantadory.  I know this won't be popular, but the ability to return to
+    arbitrary code in SGX eliminates a lot of the saftey nets.  Use case:  Put a call stack outside
+    the enclave and see what happens.
+    - You could also consider modifying RET to verify that the stack is inside an enclave (but that would break my code).
+  - Multiple stacks.  I'd love to be able to use other registers to manage a private in-enclave stack alongside the public stack.  CET already has the concept of a shadow stack... take it to the next level.
+  - Sharing data between multiple enclaves.  I know this is hard... but it can be done.
+  - Larger EPCs.  Can we find a way to dynamically add/remove EPC, so some machines can be no-SGX and others can be all-SGX?  The current setup is untennable.
+  - I really love the Memory Encryption Engine.  What can we do to get that back?
+  - I'd like you to get in the "app store" business... with enclaves.
+  - Possible bug:  Let's say we set aside 4K for the SSA.  CPUID tells us that it wants 1088 bytes for XSAVE.  
+    Now, set NSSA to a big number (like 14)... the enclave starts and thinks everything is fine even if there's 
+    nowhere near that much room in the SSA.
+  - My ideal Intel CPU (desktop, enterprise & cloud):  SGX3, AES, SHA, CET, AVX, APX.  No -16 or -32 bit instructions.  No segment registers.  Reclaim your instruction set!  SGX_LC is mandatory if it's a production system.
+
+#### Answers to Intel/SGX questions
+  - Question:  Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
+    transferred on EENTER relative to the base of the enclave.) signed?
+  -- Answer:  The TCS is definately signed.  Intel specifically designed SGX enclaves to have controlled
+     entry points to prevent ROP attacks.
+
+  - Question:  Can an SGX enclave span multiple virtual addresses spaces?
+  -- Answer:  No, the virtual address base is set when the enclave is created.  There is
+     no mechanism for different page-level virtual address bases
+
+  - Question:  How can we tell how large an SSA frame will be?  We know how big the XSAVE area will be.  We know GPRSGX is a fixed size.
+  -- Answer:  Use the CPUID instruction. 
+
+
 ### Linux Kernel SGX experts like Jarko
 - What are your thoughts on allowing non-privlidged users to create enclaves?  Right now, only privlidged
   users can create an enclave?
@@ -59,16 +84,6 @@ in the SSA.
   EINIT which would have some valuable debugging data.  The only way to see it is to enable debugging in
   the kernel, and even then, the program wouldn't be able to use it.  Is there a way we can get that error
   number to the calling program?
-
-### Answers to SGX questions
-  - Question:  Is the TCS signed?  Specifically, is the TCS.OENTRY (Offset in enclave to which control is
-    transferred on EENTER relative to the base of the enclave.) signed?
-  -- Answer:  The TCS is definately signed.  Intel specifically designed SGX enclaves to have controlled
-     entry points to prevent ROP attacks.
-
-  - Question:  Can an SGX enclave span multiple virtual addresses spaces?
-  -- Answer:  No, the virtual address base is set when the enclave is created.  There is
-     no mechanism for different page-level virtual address bases
 
 ## Compiler
 
