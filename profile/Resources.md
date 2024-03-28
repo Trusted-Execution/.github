@@ -76,17 +76,17 @@ Learn LLVM 17: 2nd Edition
 Chapter 13: Beyond Instruction Selection
 
 #### Procedure
-- Step 1: Create a .cpp file that will contain the code for the pass
-     a: Recommend to use other passes and/or book as a template for creating the pass
-- Step 2: Add the new .cpp file into the CmakeLists.txt file in the Target folder (X86)
-- Step 3: Add two prototypes inside LLVM namespace declaration in the target.h file (X86.h)
-     a: Add a function delcaration that initializes the pass and takes in a pass registry into 
+1. Step 1: Create a .cpp file that will contain the code for the pass
+     - a: Recommend to use other passes and/or book as a template for creating the pass
+2. Step 2: Add the new .cpp file into the CmakeLists.txt file in the Target folder (X86)
+3. Step 3: Add two prototypes inside LLVM namespace declaration in the target.h file (X86.h)
+     - a: Add a function delcaration that initializes the pass and takes in a pass registry into 
         the target.h file
-     b: Declare the function that creates the pass
-     c: Recommend following the implementation of the other passes
-- Step 4: Add pass into the targetMachine.cpp file (X86TargetMachine.cpp)
-     a: Initialize the pass
-     b: Add the pass to the pass pipeline at the location you want the pass to be run
+     - b: Declare the function that creates the pass
+     - c: Recommend following the implementation of the other passes
+4. Step 4: Add pass into the targetMachine.cpp file (X86TargetMachine.cpp)
+     - a: Initialize the pass
+     - b: Add the pass to the pass pipeline at the location you want the pass to be run
 
 ## Linux Kernel Resources
 - A good place to view and search Linux Kernel source code:  https://elixir.bootlin.com/linux/latest/source
