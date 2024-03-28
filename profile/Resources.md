@@ -64,16 +64,15 @@ More details and other helpful Git tutorials can be found [here](https://www.dig
 ## LLVM Resources
 
 ### Books
-Learn LLVM 17: 2nd Edition 
-LLVM Cookbook 
-LLVM Essentials 
+- Learn LLVM 17: 2nd Edition 
+- LLVM Cookbook 
+- LLVM Essentials 
 
 
 ### Registering a Pass
 
 #### Resources
-Learn LLVM 17: 2nd Edition
-Chapter 13: Beyond Instruction Selection
+- Learn LLVM 17: 2nd Edition: Chapter 13: Beyond Instruction Selection
 
 #### Procedure
 1. Create a .cpp file that will contain the code for the pass
