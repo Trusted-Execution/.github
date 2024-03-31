@@ -40,6 +40,8 @@ we'd like to ask.
   -- Can an ordinary developer do it?  Would Intel be interested in scaling this up to "App Store" levels?
   -- What are our options for storing/managing a signing key?  What are some examples of things that Intel has allowed?
   -- What are some examples of things Intel has said "No" to?
+- What is the long-term intended behavior of a read from normalspace into enclave space?  Is it all ones or a SEGFAULT?
+- What are some recommended techniques for debugging enclaves?  Do we have tools?  Has there been any talk of modifying existing tools?
 
 #### Intel Feature Requests
   - The ability for one enclave to directly call another enclave.  This would eliminate a lot of CRT code.
